@@ -3,11 +3,11 @@
   "displayName": "vscode-google-java-format",
   "description": "Google Java Format",
   "publisher": "mmilic",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.85.0"
   },
-  "icon": "./java-logo.png",
+  "icon": "java-logo.png",
   "repository": {
     "url": "https://github.com/milic-marko/google-java-format"
   },
