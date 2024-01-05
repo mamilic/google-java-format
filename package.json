@@ -1,9 +1,9 @@
 {
-  "name": "vscode-google-java-format",
-  "displayName": "vscode-google-java-format",
-  "description": "Google Java Format",
+  "name": "java-google-format",
+  "displayName": "Java Google Format",
+  "description": "Java Google Format",
   "publisher": "mmilic",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.85.0"
   },
