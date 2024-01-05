@@ -1,5 +1,6 @@
 import * as cp from "child_process";
 import * as vscode from 'vscode';
+import * as path from 'path';
 
 const outputChannel = vscode.window.createOutputChannel("google-java-format");
 
@@ -47,6 +48,8 @@ class GoogleJavaFormattingProvider implements vscode.DocumentRangeFormattingEdit
       child.on("close", (retcode) => {
         if (stderr.length > 0) {
           outputChannel.appendLine(stderr);
+          const fileName = path.basename(document.fileName);
+          vscode.window.showErrorMessage('Java Google Format failed. Does ' + fileName + ' have syntax errors?');
           return reject("Failed to format file");
         }
 
