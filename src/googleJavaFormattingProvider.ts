@@ -33,7 +33,7 @@ class GoogleJavaFormattingProvider implements vscode.DocumentRangeFormattingEdit
           "--lines",
           `${range.start.line}:${range.end.line}`,
           "-"
-        ], { shell: true });
+        ]);
 
       child.stdout.on("data", (chunk) => (stdout += chunk));
       child.stderr.on("data", (chunk) => (stderr += chunk));
