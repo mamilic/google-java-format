@@ -2,7 +2,7 @@ import * as cp from "child_process";
 import * as vscode from 'vscode';
 import * as path from 'path';
 
-const outputChannel = vscode.window.createOutputChannel("google-java-format");
+const outputChannel = vscode.window.createOutputChannel("java-google-format");
 
 class GoogleJavaFormattingProvider implements vscode.DocumentRangeFormattingEditProvider {
   private jarPath: string;

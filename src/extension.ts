@@ -2,7 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as cp from 'child_process';
 import * as vscode from 'vscode';
-import GoogleJavaFormattingProvider from './google-java-jormatting-provider';
+import GoogleJavaFormattingProvider from './googleJavaFormattingProvider';
 
 const documentFilter: vscode.DocumentFilter = {
 	language: "java",
@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
 			return;
 		}
 
-		const googleJavaFormatFilePath = context.asAbsolutePath('lib/google-java-format-1.19.1-all-deps.jar');
+		const googleJavaFormatFilePath = context.asAbsolutePath('lib/google-java-format-1.19.2-all-deps.jar');
 
 		context.subscriptions.push(
 			vscode.languages.registerDocumentRangeFormattingEditProvider(

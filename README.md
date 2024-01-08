@@ -14,4 +14,4 @@ This extension provides a convenient way to format Java code using Google's Java
 
 ## Requirements
 
-This extension a Java Development Kit (JDK) to be installed on your system.
+This extension requires a Java Development Kit (JDK) to be installed on your system.
