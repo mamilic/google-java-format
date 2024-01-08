@@ -1,6 +1,6 @@
 import * as cp from "child_process";
-import * as vscode from 'vscode';
 import * as path from 'path';
+import * as vscode from 'vscode';
 
 const outputChannel = vscode.window.createOutputChannel("java-google-format");
 

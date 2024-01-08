@@ -5,26 +5,26 @@ import * as vscode from 'vscode';
 import GoogleJavaFormattingProvider from './googleJavaFormattingProvider';
 
 const documentFilter: vscode.DocumentFilter = {
-	language: "java",
-	scheme: "file",
+  language: "java",
+  scheme: "file",
 };
 
 export function activate(context: vscode.ExtensionContext) {
-	cp.exec('java -version', (error, stdout, stderr) => {
-		if (error) {
-			vscode.window.showErrorMessage('Java is not available. Please install Java and try again.');
-			return;
-		}
+  cp.exec('java -version', (error, stdout, stderr) => {
+    if (error) {
+      vscode.window.showErrorMessage('Java is not available. Please install Java and try again.');
+      return;
+    }
 
-		const googleJavaFormatFilePath = context.asAbsolutePath('lib/google-java-format-1.19.2-all-deps.jar');
+    const googleJavaFormatFilePath = context.asAbsolutePath('lib/google-java-format-1.19.2-all-deps.jar');
 
-		context.subscriptions.push(
-			vscode.languages.registerDocumentRangeFormattingEditProvider(
-				documentFilter,
-				new GoogleJavaFormattingProvider(googleJavaFormatFilePath)
-			)
-		);
-	});
+    context.subscriptions.push(
+      vscode.languages.registerDocumentRangeFormattingEditProvider(
+        documentFilter,
+        new GoogleJavaFormattingProvider(googleJavaFormatFilePath)
+      )
+    );
+  });
 }
 
 // This method is called when your extension is deactivated
