@@ -54,6 +54,7 @@ class GoogleJavaFormattingProvider implements vscode.DocumentRangeFormattingEdit
         }
 
         if (retcode !== 0) {
+          vscode.window.showErrorMessage('Java Google Format failed. Please try again.');
           return reject("Failed to format file");
         }
 

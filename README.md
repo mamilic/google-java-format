@@ -1,6 +1,6 @@
 # Java Google Format
 
-This extension provides a convenient way to format Java code using Google's Java format standards.
+This extension provides a convenient way to format Java code using Google's Java Format standards.
 
 ## Usage
 
@@ -8,9 +8,17 @@ This extension provides a convenient way to format Java code using Google's Java
 2. Use the `Format Document` command
 3. Enjoy your beautifully formatted Java code!
 
+You can also set it as your default Java formatter in Visual Studio Code settings:
+
+```json
+"[java]": {
+  "editor.defaultFormatter": "mmilic.java-google-format",
+}
+```
+
 ## Features
 
-- Formats Java code according to Google's Java format standards using the [Google Java Format](https://github.com/google/google-java-format/tree/master) tool.
+- Formats Java code according to Google's Java format standards using the [Google Java Format](https://github.com/google/google-java-format/tree/master) tool. The current version of Google Java Format used is *v1.19.2*.
 
 ## Requirements
 
