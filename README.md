@@ -18,7 +18,7 @@ You can also set it as your default Java formatter in Visual Studio Code setting
 
 ## Features
 
-- Formats Java code according to Google's Java format standards using the [Google Java Format](https://github.com/google/google-java-format/tree/master) tool. The current version of Google Java Format used is *v1.22.0*.
+- Formats Java code according to Google's Java format standards using the [Google Java Format](https://github.com/google/google-java-format/tree/master) tool. The current version of Google Java Format used is *v1.23.0*.
 
 ## Requirements
 

@@ -3,7 +3,7 @@
   "displayName": "Java Google Format",
   "description": "Java Google Format",
   "publisher": "mmilic",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "engines": {
     "vscode": "^1.85.0"
   },

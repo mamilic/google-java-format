@@ -4,6 +4,9 @@ All notable changes to the "google-java-format" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.4
+- Update google-java-format jar to google-java-format-1.23.0-all-deps.jar
+
 ## 0.1.3
 - Update google-java-format jar to google-java-format-1.22.0-all-deps.jar
 

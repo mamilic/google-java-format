@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
       return;
     }
 
-    const googleJavaFormatFilePath = context.asAbsolutePath('lib/google-java-format-1.22.0-all-deps.jar');
+    const googleJavaFormatFilePath = context.asAbsolutePath('lib/google-java-format-1.23.0-all-deps.jar');
 
     context.subscriptions.push(
       vscode.languages.registerDocumentRangeFormattingEditProvider(
